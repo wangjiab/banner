@@ -1,0 +1,25 @@
+@import './_function.scss';
+@import './_reset.scss';
+body{
+	width:100%;
+	font-size:13px;
+	background-color: #fafafa;
+	animation: lefteaseinAnimate 1s ease 1;
+}
+.responseImg {
+  width: 100%;
+  height: auto; 
+}
+ @keyframes lefteaseinAnimate {
+   0% {
+      opacity: 0;
+   }
+    50%{
+      opacity:0.5;
+    }
+   /*在0%时设置文字在想X轴-2000px位移处（左边），透明度为0，也就是看不见文字*/
+   100% {
+      opacity: 1;
+   }
+   /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+}
